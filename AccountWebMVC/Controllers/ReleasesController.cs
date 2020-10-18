@@ -14,7 +14,7 @@ namespace AccountWebMVC.Controllers
             List<Release> list = new List<Release>();
             list.Add(new Release { Id = 1, Local = "Mundial"});
             list.Add(new Release { Id = 2, Local = "Farmácia"});
-
+            list.Add(new Release { Id = 3, Local = "teste" });
 
             return View(list);
         }
