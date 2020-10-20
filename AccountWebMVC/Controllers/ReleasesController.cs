@@ -1,22 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AccountWebMVC.Models;
 using Microsoft.AspNetCore.Mvc;
+using AccountWebMVC.Services;
+using AccountWebMVC.Models;
 
 namespace AccountWebMVC.Controllers
 {
     public class ReleasesController : Controller
     {
+        private readonly ReleasesService _releasesService;
+
+        public ReleasesController(ReleasesService releasesService)
+        {            
+            _releasesService = releasesService;
+        }
+
         public IActionResult Index()
         {
-            List<Release> list = new List<Release>();
-            list.Add(new Release { Id = 1, Local = "Mundial"});
-            list.Add(new Release { Id = 2, Local = "Farmácia"});
-            list.Add(new Release { Id = 3, Local = "teste" });
-
+            var list = _releasesService.FindAll();
             return View(list);
         }
+
+        public IActionResult Create()
+        {
+            return View(new Release());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Release release)
+        {
+            _releasesService.Insert(release);
+            return RedirectToAction(nameof(Index));
+        }
+
+        
     }
 }

@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using AccountWebMVC.Services;
+using Microsoft.EntityFrameworkCore;
+using AccountWebMVC.Data;
 
 namespace AccountWebMVC
 {
@@ -35,15 +37,21 @@ namespace AccountWebMVC
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            //services.AddScoped<ReleasesService>();
+
+            services.AddDbContext<AccountWebMVCContext>(options =>
+                    options.UseMySql(Configuration.GetConnectionString("AccountWebMVCContext")));
+
             services.AddScoped<ReleasesService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,ReleasesService releasesService)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                releasesService.Seed();
             }
             else
             {

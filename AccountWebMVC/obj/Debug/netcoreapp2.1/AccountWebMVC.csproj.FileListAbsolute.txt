@@ -35,3 +35,6 @@ C:\VSEstudos\AccountWebMVC\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.c
 C:\VSEstudos\AccountWebMVC\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.csprojAssemblyReference.cache
 C:\VSEstudos\AccountWebMVC\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.csproj.CoreCompileInputs.cache
 C:\VSEstudos\AccountWebMVC\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Releases\Index.cshtml.g.cs
+C:\VSEstudos\AccountWebMVC\AccountWebMVC\bin\Debug\netcoreapp2.1\Properties\serviceDependencies.json
+C:\VSEstudos\AccountWebMVC\AccountWebMVC\bin\Debug\netcoreapp2.1\Properties\serviceDependencies.local.json
+C:\VSEstudos\AccountWebMVC\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Releases\Create.cshtml.g.cs
