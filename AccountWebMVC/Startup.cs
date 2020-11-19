@@ -37,16 +37,16 @@ namespace AccountWebMVC
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            //services.AddScoped<ReleasesService>();
-
             services.AddDbContext<AccountWebMVCContext>(options =>
                     options.UseMySql(Configuration.GetConnectionString("AccountWebMVCContext")));
 
             services.AddScoped<ReleasesService>();
+            services.AddScoped<LocalService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env,ReleasesService releasesService)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,ReleasesService releasesService) //,LocalService localService
         {
             if (env.IsDevelopment())
             {

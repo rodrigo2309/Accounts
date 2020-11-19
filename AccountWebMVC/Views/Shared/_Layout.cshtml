@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="utf-8" />
@@ -6,7 +7,7 @@
     <title>@ViewData["Title"] - AccountWebMVC</title>
 
     <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-flatry.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-flaty.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment exclude="Development">
@@ -34,6 +35,7 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                     <li><a asp-area="" asp-controller="Releases" asp-action="Index">Releases</a></li>
+                    <li><a asp-area="" asp-controller="Local" asp-action="Index">Local</a></li>
                 </ul>
             </div>
         </div>
@@ -71,5 +73,6 @@
     </environment>
 
     @RenderSection("Scripts", required: false)
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </body>
 </html>

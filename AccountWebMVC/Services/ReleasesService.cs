@@ -4,17 +4,19 @@ using System.Linq;
 using System.Threading.Tasks;
 using AccountWebMVC.Data;
 using AccountWebMVC.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace AccountWebMVC.Services
 {
     public class ReleasesService
-    {
+    {        
         private readonly AccountWebMVCContext _context;
 
         public ReleasesService(AccountWebMVCContext context)
         {
             _context = context;
         }
+        
 
         public void Seed()
         {
@@ -23,8 +25,14 @@ namespace AccountWebMVC.Services
                 return;
             }
 
-            Release d1 = new Release(1, 1, 1, 1,DateTime.Now);
-            Release d2 = new Release(2, 2, 2, 2,DateTime.Now);
+            Tipo t1 = new Tipo(1, "MERCADO");
+            Tipo t2 = new Tipo(2, "FARMÀCIA");
+
+            Local l1 = new Local(1,"MUNDIAL",t1);
+            Local l2 = new Local(2, "PACHECO", t2);
+
+            Release d1 = new Release(1,l1, 100, DateTime.Now);
+            Release d2 = new Release(2,l2, 200, DateTime.Now);
 
             _context.Release.AddRange(d1, d2);
 
@@ -34,7 +42,7 @@ namespace AccountWebMVC.Services
 
         public List<Release> FindAll()
         {
-            return _context.Release.ToList();
+            return _context.Release.Include(obj => obj.Local).ToList();
         }
 
         public void Insert(Release obj)

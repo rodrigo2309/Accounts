@@ -1,53 +1,71 @@
 ﻿@model IEnumerable<AccountWebMVC.Models.Release>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewBag.Title = "Index";
 }
-
-<h2>Index</h2>
+<h2>Clientes</h2>
 
 <p>
-    <a asp-action="Create" >Create New</a>
+    <button class="btn btn-success create">Criar Novo Cliente<i class="glyphicon glyphicon-open"></i></button>
 </p>
-<table class="table table-striped table-hover">
-    <thead>
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Id)</th>
+        <th>@Html.DisplayNameFor(model => model.Local)</th>
+        <th>@Html.DisplayNameFor(model => model.Valor)</th>
+        <th>@Html.DisplayNameFor(model => model.Data)</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Local)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Valor)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Tipo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Data)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Id)</td>
+            <td>@Html.DisplayFor(modelItem => item.Local.Nome)</td>
+            <td>@Html.DisplayFor(modelItem => item.Valor)</td>
+            <td>@Html.DisplayFor(modelItem => item.Data)</td>
             <td>
-                @Html.DisplayFor(modelItem => item.Local)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Valor)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Tipo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Data)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <button class="btn btn-success details" data-id="@item.Id"><i class="glyphicon glyphicon-file"></i></button>
+                <button class="btn btn-danger delete " data-id="@item.Local"><i class="glyphicon glyphicon-trash"></i> </button>
+                <button class="btn btn-primary edit " data-id="@item.Local"><i class="glyphicon glyphicon-edit"></i> </button>
             </td>
         </tr>
-}
-    </tbody>
+    }
 </table>
+<div id="modal" class="modal fade" role="dialog" />
+
+@section scripts{
+    <script>
+        $(function () {
+            $(".details").click(function () {
+                var id = $(this).attr("data-id");
+                alert(id);
+                $("#modal").load("Details?id=" + id, function () {
+                    $("#modal").modal();
+                })
+            });
+
+            $(".edit").click(function () {
+                var id = $(this).attr("data-id");
+                alert(id);
+                $("#modal").load("Edit?id=" + id, function () {
+                    $("#modal").modal();
+                })
+            });
+
+            $(".delete").click(function () {
+                var id = $(this).attr("data-id");
+                alert(id);
+                $("#modal").load("Delete?id=" + id, function () {
+                    $("#modal").modal();
+                })
+            });
+
+            $(".create").click(function () {
+                $("#modal").load("/Local/Create/", function () {
+                    $("#modal").modal();
+                })
+            });
+
+        })
+    </script>
+}
