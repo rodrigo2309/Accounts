@@ -3,7 +3,7 @@
 @{
     ViewBag.Title = "Index";
 }
-<h2>Clientes</h2>
+<h2>Lançamentos</h2>
 
 <p>
     <button class="btn btn-success create">Criar Novo Cliente<i class="glyphicon glyphicon-open"></i></button>
@@ -61,7 +61,7 @@
             });
 
             $(".create").click(function () {
-                $("#modal").load("/Local/Create/", function () {
+                $("#modal").load("/Releases/Create/", function () {
                     $("#modal").modal();
                 })
             });

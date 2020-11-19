@@ -29,12 +29,9 @@ namespace AccountWebMVC.Controllers
         
         public IActionResult Create()
         {
-            return View();
-            /*
             var local = _localService.FindAll();
             var viewModel = new ReleasesFormViewModel { Local = local }; 
             return View(viewModel); //new Release()
-            */
         } 
 
 
@@ -42,11 +39,8 @@ namespace AccountWebMVC.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Release release)
         {
-            return View();
-            /*
             _releasesService.Insert(release);
             return RedirectToAction(nameof(Index));
-            */
         }
         
 
