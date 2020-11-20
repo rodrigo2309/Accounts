@@ -3,11 +3,13 @@
 @{
     ViewBag.Title = "Index";
 }
-<h2>Lançamentos</h2>
+<h2>Contas</h2>
 
 <p>
-    <button class="btn btn-success create">Criar Novo Cliente<i class="glyphicon glyphicon-open"></i></button>
+    <button class="btn btn-success create">Novo Lançamento   <i class="glyphicon glyphicon-open"></i></button>
+    <button class="btn btn-success localizar">Cadastro Local   <i class="glyphicon glyphicon-open"></i></button>
 </p>
+
 <table class="table">
     <tr>
         <th>@Html.DisplayNameFor(model => model.Id)</th>
@@ -62,6 +64,12 @@
 
             $(".create").click(function () {
                 $("#modal").load("/Releases/Create/", function () {
+                    $("#modal").modal();
+                })
+            });
+
+            $(".localizar").click(function () {
+                $("#modal").load("/Local/Create/", function () {
                     $("#modal").modal();
                 })
             });

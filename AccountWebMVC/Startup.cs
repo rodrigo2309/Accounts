@@ -42,6 +42,7 @@ namespace AccountWebMVC
 
             services.AddScoped<ReleasesService>();
             services.AddScoped<LocalService>();
+            services.AddScoped<TipoService>();
 
         }
 

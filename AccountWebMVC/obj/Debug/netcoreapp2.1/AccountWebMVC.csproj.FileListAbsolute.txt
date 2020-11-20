@@ -78,4 +78,5 @@ C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Releases\D
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Releases\Edit.cshtml.g.cs
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Local\Index.cshtml.g.cs
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Releases\Create.cshtml.g.cs
+C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Local\Create.cshtml.g.cs
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.csprojAssemblyReference.cache

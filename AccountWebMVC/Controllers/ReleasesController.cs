@@ -34,7 +34,6 @@ namespace AccountWebMVC.Controllers
             return View(viewModel); //new Release()
         } 
 
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Release release)
@@ -42,7 +41,5 @@ namespace AccountWebMVC.Controllers
             _releasesService.Insert(release);
             return RedirectToAction(nameof(Index));
         }
-        
-
     }
 }
