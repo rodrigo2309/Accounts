@@ -7,7 +7,7 @@
 
 <p>
     <button class="btn btn-success create">Novo Lançamento   <i class="glyphicon glyphicon-open"></i></button>
-    <button class="btn btn-success localizar">Cadastro Local   <i class="glyphicon glyphicon-open"></i></button>
+    <button class="btn btn-success local">Cadastro Local   <i class="glyphicon glyphicon-open"></i></button>
 </p>
 
 <table class="table">
@@ -27,8 +27,8 @@
             <td>@Html.DisplayFor(modelItem => item.Data)</td>
             <td>
                 <button class="btn btn-success details" data-id="@item.Id"><i class="glyphicon glyphicon-file"></i></button>
-                <button class="btn btn-danger delete " data-id="@item.Local"><i class="glyphicon glyphicon-trash"></i> </button>
-                <button class="btn btn-primary edit " data-id="@item.Local"><i class="glyphicon glyphicon-edit"></i> </button>
+                <button class="btn btn-danger delete" data-id="@item.Id"><i class="glyphicon glyphicon-trash"></i> </button>
+                <button class="btn btn-primary edit" data-id="@item.Id"><i class="glyphicon glyphicon-edit"></i> </button>
             </td>
         </tr>
     }
@@ -40,7 +40,6 @@
         $(function () {
             $(".details").click(function () {
                 var id = $(this).attr("data-id");
-                alert(id);
                 $("#modal").load("Details?id=" + id, function () {
                     $("#modal").modal();
                 })
@@ -48,16 +47,14 @@
 
             $(".edit").click(function () {
                 var id = $(this).attr("data-id");
-                alert(id);
-                $("#modal").load("Edit?id=" + id, function () {
+                $("#modal").load("/Releases/Edit?id=" + id, function () {
                     $("#modal").modal();
                 })
             });
 
             $(".delete").click(function () {
                 var id = $(this).attr("data-id");
-                alert(id);
-                $("#modal").load("Delete?id=" + id, function () {
+                $("#modal").load("/Releases/Delete?id=" + id, function () {
                     $("#modal").modal();
                 })
             });
@@ -68,7 +65,7 @@
                 })
             });
 
-            $(".localizar").click(function () {
+            $(".local").click(function () {
                 $("#modal").load("/Local/Create/", function () {
                     $("#modal").modal();
                 })

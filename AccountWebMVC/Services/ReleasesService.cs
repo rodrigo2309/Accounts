@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AccountWebMVC.Data;
 using AccountWebMVC.Models;
+using AccountWebMVC.Services.Exceptions;
 using Microsoft.EntityFrameworkCore;
 
 namespace AccountWebMVC.Services
@@ -50,6 +51,36 @@ namespace AccountWebMVC.Services
             _context.Add(obj);
             _context.SaveChanges();
         }
+
+        public Release FindById(int id)
+        {
+            return _context.Release.Include(obj => obj.Local).FirstOrDefault(obj => obj.Id == id);
+        }
+
+        public void Remove(int id)
+        {
+            var obj = _context.Release.Find(id);
+            _context.Release.Remove(obj);
+            _context.SaveChanges();
+        }
         
+        public void Update(Release obj)
+        {
+            if (!_context.Release.Any(x => x.Id == obj.Id))
+            {
+                throw new DllNotFoundException("Id not found");
+            }
+            try
+            {
+                _context.Update(obj);
+                _context.SaveChanges();
+            }
+            catch (DbUpdateConcurrencyException e)
+            {
+                throw new DbConcurrencyException(e.Message);
+            }
+
+
+        }
     }
 }
