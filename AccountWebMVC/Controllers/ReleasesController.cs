@@ -27,6 +27,12 @@ namespace AccountWebMVC.Controllers
             return View(list);
         }
 
+        public IActionResult Details(int? id)
+        {
+            var list = _releasesService.FindById(id.Value);
+            return View(list);
+        }
+
         public IActionResult Edit(int? id)
         {
             if (id == null)
@@ -40,9 +46,9 @@ namespace AccountWebMVC.Controllers
                 return NotFound();
             }
 
-            //List<Release> release = _releasesService.FindAll();
-            //ReleasesFormViewModel viewModel = new ReleasesFormViewModel {Local = obj, Release = obj };
-            return View(obj);
+            List<Local> local = _localService.FindAll();
+            ReleasesFormViewModel viewModel = new ReleasesFormViewModel {Local = local, Release = obj };
+            return View(viewModel);
 
         }
 
