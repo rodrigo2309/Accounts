@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace AccountWebMVC.Models
 {
@@ -7,8 +8,11 @@ namespace AccountWebMVC.Models
     {
         public int Id { get; set; }
         public Local Local { get; set; }        
-        public int LocalID { get; set; }        
-        public double Valor { get; set; }        
+        public int LocalID { get; set; }  
+        [DisplayFormat(DataFormatString = "{0:F2}")]
+        public double Valor { get; set; } 
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime Data { get; set; }
         
         public Release()
