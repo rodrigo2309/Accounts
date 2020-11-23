@@ -116,3 +116,6 @@ C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.Views.
 C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.dll
 C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.pdb
 C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.csproj.CopyComplete
+C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\ReleasesRecord\Index.g.cshtml.cs
+C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\ReleasesRecord\ReleaseSearch.g.cshtml.cs
+C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\ReleasesRecord\GroupingSearch.g.cshtml.cs
