@@ -79,7 +79,6 @@ C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Releases\E
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Local\Index.cshtml.g.cs
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Releases\Create.cshtml.g.cs
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Local\Create.cshtml.g.cs
-C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.csprojAssemblyReference.cache
 C:\VSEstudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp2.1\AccountWebMVC.deps.json
 C:\VSEstudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp2.1\AccountWebMVC.runtimeconfig.json
 C:\VSEstudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp2.1\AccountWebMVC.runtimeconfig.dev.json
@@ -119,3 +118,6 @@ C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.csproj
 C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\ReleasesRecord\Index.g.cshtml.cs
 C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\ReleasesRecord\ReleaseSearch.g.cshtml.cs
 C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\ReleasesRecord\GroupingSearch.g.cshtml.cs
+C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\ReleasesRecord\GroupingSearch.cshtml.g.cs
+C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\ReleasesRecord\Index.cshtml.g.cs
+C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\ReleasesRecord\SimpleSearch.cshtml.g.cs
