@@ -12,16 +12,23 @@ namespace AccountWebMVC.Models
         public Tipo Tipo { get; set; }
         public int TipoID { get; set; }
 
+        public ICollection<Release> Releases { get; set; } = new List<Release>();
+
         public Local()
         {
 
         }
-
         public Local(int id, string nome, Tipo tipo)
         {
             Id = id;
             Nome = nome;
             Tipo = tipo;
         }
+        public double TotalSales(DateTime initial, DateTime final)
+        {
+            return Releases.Where(sr => sr.Data >= initial && sr.Data <= final).Sum(sr => sr.Valor);
+        }
+
+
     }
 }

@@ -32,5 +32,8 @@ namespace AccountWebMVC.Models
             Valor = valor;
             Data = data;
         }
+
+       
+
     }
 }
