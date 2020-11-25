@@ -33,5 +33,23 @@ namespace AccountWebMVC.Services
                 .ToListAsync();
         }
 
+        public async Task<List<IGrouping<Local,Release>>> FindByDateGroupingAsync(DateTime? minDate, DateTime? maxDate)
+        {
+            var result = from obj in _context.Release select obj;
+            if (minDate.HasValue)
+            {
+                result = result.Where(x => x.Data >= minDate.Value);
+            };
+            if (maxDate.HasValue)
+            {
+                result = result.Where(x => x.Data <= maxDate.Value);
+            }
+            return await result
+                .Include(x => x.Local)
+                .OrderByDescending(x => x.Data)
+                .GroupBy(x => x.Local)
+                .ToListAsync();
+        }
+
     }
 }
