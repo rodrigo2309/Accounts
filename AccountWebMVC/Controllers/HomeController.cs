@@ -15,7 +15,7 @@ namespace AccountWebMVC.Controllers
             return View();
         }
 
-        public IActionResult Login()
+        public IActionResult Login2()
         {
             return View();
         }
