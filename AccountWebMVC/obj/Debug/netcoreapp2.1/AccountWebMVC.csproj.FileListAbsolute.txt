@@ -124,3 +124,5 @@ C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Releases
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.cshtml.g.cs
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.csprojAssemblyReference.cache
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login2.cshtml.g.cs
+C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
+C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login2.g.cshtml.cs

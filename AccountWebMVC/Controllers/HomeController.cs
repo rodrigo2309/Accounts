@@ -20,6 +20,11 @@ namespace AccountWebMVC.Controllers
             return View();
         }
 
+        public IActionResult Logar(string Nome,string senha)
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
