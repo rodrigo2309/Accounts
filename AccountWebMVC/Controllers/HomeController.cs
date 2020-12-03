@@ -5,22 +5,20 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using AccountWebMVC.Models.ViewModels;
+using AccountWebMVC.Services;
 
 namespace AccountWebMVC.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ReleasesService _releasesService;
+
+        public HomeController(ReleasesService releasesService)
+        {
+            _releasesService = releasesService;
+        }
+
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Login2()
-        {
-            return View();
-        }
-
-        public IActionResult Logar(string Nome,string senha)
         {
             return View();
         }
