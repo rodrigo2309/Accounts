@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AccountWebMVC.Models;
 using AccountWebMVC.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,23 +25,25 @@ namespace AccountWebMVC.Controllers
         {
             return View();
         }
-        public IActionResult Logar(string usrname, string psw) 
+        public IActionResult Logar(Usuarios usuarios) 
         {
-            if (usrname == null)
+            if (usuarios.Nome == null)
             {
-                return NotFound();
+                return View(nameof(Login2));
             }
-            if (psw == null)
+            if (usuarios.Senha == null)
             {
-                return NotFound();
+                return View(nameof(Login2));
             }
 
-            if (_loginService.confereSenha(usrname, psw))
+            if (_loginService.confereSenha(usuarios.Nome, usuarios.Senha))
             {
                 return RedirectToAction(nameof(Index),"Releases");
             }
 
-            return NotFound();
+            ViewData["Resultado"] = "Deu ruim";
+
+            return RedirectToAction(nameof(Login2));
 
             
         }

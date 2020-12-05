@@ -1,6 +1,9 @@
-﻿@{ 
+﻿@model AccountWebMVC.Models.Usuarios
+
+@{
     ViewData["Title"] = "Index";
 }
+<h2>@ViewData["Resultado"]</h2>
 
 <body>
     <div class="container">
@@ -16,26 +19,28 @@
                     </div>
                     <div class="modal-body">
                         <form asp-action="Logar" id="myform">
+                            <div asp-validation-summary="All" class="text-danger"></div>
                             <form role="form">
                                 <div class="form-group">
-                                    <label for="usrname"><span class="glyphicon glyphicon-user"></span> Usuário</label>
-                                    <input type="text" class="form-control" id="usrname" name="usrname" placeholder="Informe o nome de usário" />
+                                    <label asp-for="Nome"><span class="glyphicon glyphicon-user"></span> Usuário</label>
+                                    <input asp-for="Nome" type="text" class="form-control" id="usrname" placeholder="Informe o nome de usário" />
+                                    <span asp-validation-for="Nome" class="text-danger"></span>
                                 </div>
                                 <div class="form-group">
-                                    <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Senha</label>
-                                    <input type="text" class="form-control" id="psw" name="psw" placeholder="informe a Senha" />
+                                    <label asp-for="Senha"><span class="glyphicon glyphicon-eye-open"></span> Senha</label>
+                                    <input asp-for="Senha" type="text" class="form-control" id="psw"  placeholder="informe a Senha" />
                                 </div>
                                 <div class="checkbox">
                                     <label><input type="checkbox" value="" checked /> Lembrar-me</label>
                                 </div>
                                 <button type="submit" class="btn btn-default btn-success btn-block">
                                     <span class="glyphicon glyphicon-off"></span> Login
-                                </button>                                
+                                </button>
                             </form>
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal" >
+                        <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal">
                             <span class="glyphicon glyphicon-remove"></span> Cancelar
                         </button>
                         <p>Não é um membro? <a href="#">Assine</a></p>
@@ -46,3 +51,7 @@
         </div>
     </div>
 </body>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
