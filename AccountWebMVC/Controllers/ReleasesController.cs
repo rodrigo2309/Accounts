@@ -5,7 +5,7 @@ using AccountWebMVC.Services;
 using AccountWebMVC.Models;
 using AccountWebMVC.Models.ViewModels;
 using System.Net;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace AccountWebMVC.Controllers
 {
@@ -20,19 +20,19 @@ namespace AccountWebMVC.Controllers
             _releasesService = releasesService;
             _localService = localService;
         }
-        
+        [Authorize]
         public IActionResult Index()
         {
             var list = _releasesService.FindAll();
             return View(list);
         }
-
+        [Authorize]
         public IActionResult Details(int? id)
         {
             var list = _releasesService.FindById(id.Value);
             return View(list);
         }
-
+        [Authorize]
         public IActionResult Edit(int? id)
         {
             if (id == null)
@@ -51,7 +51,7 @@ namespace AccountWebMVC.Controllers
             return View(viewModel);
 
         }
-
+        [Authorize]
         public IActionResult Delete(int? id)
         {
             if (id == null)
@@ -68,14 +68,14 @@ namespace AccountWebMVC.Controllers
 
             return View(obj);
         }
-        
+        [Authorize]
         public IActionResult Create()
         {
             var local = _localService.FindAll();
             var viewModel = new ReleasesFormViewModel { Local = local }; 
             return View(viewModel); //new Release()
-        } 
-
+        }
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Release release)
@@ -83,7 +83,7 @@ namespace AccountWebMVC.Controllers
             _releasesService.Insert(release);
             return RedirectToAction(nameof(Index));
         }
-
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Delete(int id)
@@ -92,7 +92,7 @@ namespace AccountWebMVC.Controllers
             return RedirectToAction(nameof(Index));
 
         }
-
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(Release release)

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using AccountWebMVC.Models.ViewModels;
 using AccountWebMVC.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AccountWebMVC.Controllers
 {
@@ -17,7 +18,7 @@ namespace AccountWebMVC.Controllers
         {
             _releasesService = releasesService;
         }
-
+        [Authorize]
         public IActionResult Index()
         {
             return View();

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using AccountWebMVC.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AccountWebMVC.Controllers
 {
@@ -15,12 +16,12 @@ namespace AccountWebMVC.Controllers
         {
             _releaseRecordService = releaseRecordService;
         }
-
+        [Authorize]
         public IActionResult Index()
         {
             return View();
         }
-
+        [Authorize]
         public async Task<IActionResult> SimpleSearch(DateTime? minDate,DateTime? maxDate)
         {
             if (!minDate.HasValue)
@@ -37,7 +38,7 @@ namespace AccountWebMVC.Controllers
             var result = await _releaseRecordService.FindByDateAsync(minDate, maxDate);
             return View(result);
         }
-
+        [Authorize]
         public async Task<IActionResult> GroupingSearch(DateTime? minDate, DateTime? maxDate)
         {
             if (!minDate.HasValue)

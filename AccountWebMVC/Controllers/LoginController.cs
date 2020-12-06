@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AccountWebMVC.Models;
 using AccountWebMVC.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AccountWebMVC.Controllers
@@ -21,10 +22,43 @@ namespace AccountWebMVC.Controllers
         {
             return View();
         }
-        public IActionResult Login2()
+        [AllowAnonymous] //coloca metodo publico 
+        public ActionResult Login2(string returnURL)
         {
+            ViewBag.ReturnURL = returnURL;
             return View();
         }
+        [HttpPost]
+        [AllowAnonymous]
+        public ActionResult Login(LoginViewModel login,string returnURL)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(login);
+            }
+
+            var achou = (login.Usuario == "ranieresilva" && login.Senha == "123") ;
+
+            if (achou)
+            {
+                FormsAuthentication.SetAuthCookie(login.Usuario, login.LembrarMe);
+                if (Url.IsLocalUrl(returnURL))
+                {
+                    return Redirect(returnURL);
+                }
+                else
+                {
+                    RedirectToAction("Index", "Home");
+                }
+            }
+            else
+            {
+                ModelState.AddModelError("", "Login inválido.");
+            }
+
+            return View(login);
+        }
+
         public IActionResult Logar(Usuarios usuarios) 
         {
             if (usuarios.Nome == null)
