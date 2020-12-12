@@ -41,7 +41,7 @@ namespace AccountWebMVC.Controllers
 
             if (achou)
             {
-                FormsAuthentication.SetAuthCookie(login.Usuario, login.LembrarMe);
+                //FormsAuthentication.SetAuthCookie(login.Usuario, login.LembrarMe);
                 if (Url.IsLocalUrl(returnURL))
                 {
                     return Redirect(returnURL);

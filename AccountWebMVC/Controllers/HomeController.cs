@@ -18,7 +18,7 @@ namespace AccountWebMVC.Controllers
         {
             _releasesService = releasesService;
         }
-        [Authorize]
+        
         public IActionResult Index()
         {
             return View();
