@@ -3,6 +3,10 @@
     "mssql1": {
       "type": "mssql",
       "connectionId": "AccountWebMVCContext"
+    },
+    "mssql2": {
+      "type": "mssql",
+      "connectionId": "AccountWebMVC2ContextConnection"
     }
   }
 }

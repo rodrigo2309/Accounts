@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "i9yV3Q6N3+70qhfdqHYdhtDO82wUB0bBJ49gb+lZL7SAmfTRvNgSJ2xft/SyIFaB73/6QUsoG7K1u6K9JKQkog==",
+  "dgSpecHash": "ntZRPtnSh/T841oa7nLZu/A1SXQyZ0epzz39lQO9VP/9d4gWnOu5uAQ4EGuKNj315iiJhmtYlXPDdt2rq5M83Q==",
   "success": true,
   "projectFilePath": "C:\\Estudos\\Accounts\\AccountWebMVC\\AccountWebMVC.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\drigo\\.nuget\\packages\\entityframework\\6.1.0\\entityframework.6.1.0.nupkg.sha512",
+    "C:\\Users\\drigo\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.1\\microsoft.aspnet.identity.core.2.2.1.nupkg.sha512",
+    "C:\\Users\\drigo\\.nuget\\packages\\microsoft.aspnet.identity.entityframework\\2.2.1\\microsoft.aspnet.identity.entityframework.2.2.1.nupkg.sha512",
     "C:\\Users\\drigo\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\drigo\\.nuget\\packages\\microsoft.aspnetcore\\2.1.7\\microsoft.aspnetcore.2.1.7.nupkg.sha512",
     "C:\\Users\\drigo\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.1.1\\microsoft.aspnetcore.antiforgery.2.1.1.nupkg.sha512",
@@ -46,9 +49,9 @@
     "C:\\Users\\drigo\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.1.1\\microsoft.aspnetcore.http.features.2.1.1.nupkg.sha512",
     "C:\\Users\\drigo\\.nuget\\packages\\microsoft.aspnetcore.httpoverrides\\2.1.1\\microsoft.aspnetcore.httpoverrides.2.1.1.nupkg.sha512",
     "C:\\Users\\drigo\\.nuget\\packages\\microsoft.aspnetcore.httpspolicy\\2.1.1\\microsoft.aspnetcore.httpspolicy.2.1.1.nupkg.sha512",
-    "C:\\Users\\drigo\\.nuget\\packages\\microsoft.aspnetcore.identity\\2.1.1\\microsoft.aspnetcore.identity.2.1.1.nupkg.sha512",
-    "C:\\Users\\drigo\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\2.1.1\\microsoft.aspnetcore.identity.entityframeworkcore.2.1.1.nupkg.sha512",
-    "C:\\Users\\drigo\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\2.1.1\\microsoft.aspnetcore.identity.ui.2.1.1.nupkg.sha512",
+    "C:\\Users\\drigo\\.nuget\\packages\\microsoft.aspnetcore.identity\\2.1.6\\microsoft.aspnetcore.identity.2.1.6.nupkg.sha512",
+    "C:\\Users\\drigo\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\2.1.6\\microsoft.aspnetcore.identity.entityframeworkcore.2.1.6.nupkg.sha512",
+    "C:\\Users\\drigo\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\2.1.6\\microsoft.aspnetcore.identity.ui.2.1.6.nupkg.sha512",
     "C:\\Users\\drigo\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\2.1.1\\microsoft.aspnetcore.jsonpatch.2.1.1.nupkg.sha512",
     "C:\\Users\\drigo\\.nuget\\packages\\microsoft.aspnetcore.localization\\2.1.1\\microsoft.aspnetcore.localization.2.1.1.nupkg.sha512",
     "C:\\Users\\drigo\\.nuget\\packages\\microsoft.aspnetcore.localization.routing\\2.1.1\\microsoft.aspnetcore.localization.routing.2.1.1.nupkg.sha512",
@@ -140,8 +143,8 @@
     "C:\\Users\\drigo\\.nuget\\packages\\microsoft.extensions.hosting\\2.1.1\\microsoft.extensions.hosting.2.1.1.nupkg.sha512",
     "C:\\Users\\drigo\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\2.1.1\\microsoft.extensions.hosting.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\drigo\\.nuget\\packages\\microsoft.extensions.http\\2.1.1\\microsoft.extensions.http.2.1.1.nupkg.sha512",
-    "C:\\Users\\drigo\\.nuget\\packages\\microsoft.extensions.identity.core\\2.1.1\\microsoft.extensions.identity.core.2.1.1.nupkg.sha512",
-    "C:\\Users\\drigo\\.nuget\\packages\\microsoft.extensions.identity.stores\\2.1.1\\microsoft.extensions.identity.stores.2.1.1.nupkg.sha512",
+    "C:\\Users\\drigo\\.nuget\\packages\\microsoft.extensions.identity.core\\2.1.6\\microsoft.extensions.identity.core.2.1.6.nupkg.sha512",
+    "C:\\Users\\drigo\\.nuget\\packages\\microsoft.extensions.identity.stores\\2.1.6\\microsoft.extensions.identity.stores.2.1.6.nupkg.sha512",
     "C:\\Users\\drigo\\.nuget\\packages\\microsoft.extensions.localization\\2.1.1\\microsoft.extensions.localization.2.1.1.nupkg.sha512",
     "C:\\Users\\drigo\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\2.1.1\\microsoft.extensions.localization.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\drigo\\.nuget\\packages\\microsoft.extensions.logging\\2.1.1\\microsoft.extensions.logging.2.1.1.nupkg.sha512",
@@ -304,5 +307,36 @@
     "C:\\Users\\drigo\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\drigo\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EntityFramework 6.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "EntityFramework",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.Identity.Core 2.2.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.Identity.Core",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.Identity.EntityFramework 2.2.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.Identity.EntityFramework",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

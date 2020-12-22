@@ -14,6 +14,7 @@ using Microsoft.EntityFrameworkCore;
 using AccountWebMVC.Data;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace AccountWebMVC
 {
@@ -41,6 +42,8 @@ namespace AccountWebMVC
 
             services.AddDbContext<AccountWebMVCContext>(options =>
                     options.UseMySql(Configuration.GetConnectionString("AccountWebMVCContext")));
+
+            services.AddIdentity<IdentityUser, IdentityRole>(); //identy
 
             services.AddScoped<ReleasesService>();
             services.AddScoped<LocalService>();

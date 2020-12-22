@@ -46,7 +46,6 @@ C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.dll
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.pdb
 C:\Estudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp2.1\appsettings.Development.json
 C:\Estudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp2.1\appsettings.json
-C:\Estudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
 C:\Estudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp2.1\AccountWebMVC.deps.json
 C:\Estudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp2.1\AccountWebMVC.runtimeconfig.json
 C:\Estudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp2.1\AccountWebMVC.runtimeconfig.dev.json
@@ -71,8 +70,6 @@ C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.Views.pd
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.genruntimeconfig.cache
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.csproj.CopyComplete
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.csproj.CoreCompileInputs.cache
-C:\Estudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp2.1\Properties\serviceDependencies.json
-C:\Estudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp2.1\Properties\serviceDependencies.local.json
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Releases\Delete.cshtml.g.cs
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Releases\Details.cshtml.g.cs
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Releases\Edit.cshtml.g.cs
