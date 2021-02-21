@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ntZRPtnSh/T841oa7nLZu/A1SXQyZ0epzz39lQO9VP/9d4gWnOu5uAQ4EGuKNj315iiJhmtYlXPDdt2rq5M83Q==",
+  "dgSpecHash": "BkwAoX6C7/a/8fVDkuSZh+z4ew0IIkuqFOG1PbjBVrm0qkwTLnRvzuOGwCLCnAJBX8mZ6wiNDoJti21z0pclmQ==",
   "success": true,
   "projectFilePath": "C:\\Estudos\\Accounts\\AccountWebMVC\\AccountWebMVC.csproj",
   "expectedPackageFiles": [
@@ -305,7 +305,8 @@
     "C:\\Users\\drigo\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\drigo\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "C:\\Users\\drigo\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
-    "C:\\Users\\drigo\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\drigo\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\drigo\\.nuget\\packages\\umbracocms.core\\8.9.1\\umbracocms.core.8.9.1.nupkg.sha512"
   ],
   "logs": [
     {
@@ -334,6 +335,16 @@
       "warningLevel": 1,
       "message": "Package 'Microsoft.AspNet.Identity.EntityFramework 2.2.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Identity.EntityFramework",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'UmbracoCms.Core 8.9.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "UmbracoCms.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.1"
       ]

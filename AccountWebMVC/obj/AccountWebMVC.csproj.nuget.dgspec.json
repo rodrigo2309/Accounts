@@ -118,6 +118,10 @@
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[2.1.1, )"
+            },
+            "UmbracoCms.Core": {
+              "target": "Package",
+              "version": "[8.9.1, )"
             }
           },
           "imports": [

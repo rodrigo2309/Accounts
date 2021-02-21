@@ -15,6 +15,8 @@ using AccountWebMVC.Data;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Umbraco.Core;
 
 namespace AccountWebMVC
 {
@@ -37,13 +39,10 @@ namespace AccountWebMVC
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<AccountWebMVCContext>(options =>
                     options.UseMySql(Configuration.GetConnectionString("AccountWebMVCContext")));
-
-            services.AddIdentity<IdentityUser, IdentityRole>(); //identy
 
             services.AddScoped<ReleasesService>();
             services.AddScoped<LocalService>();
@@ -81,6 +80,8 @@ namespace AccountWebMVC
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseAuthentication(); //identity
+
             app.UseCookiePolicy();
 
             app.UseMvc(routes =>

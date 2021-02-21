@@ -4701,6 +4701,15 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "UmbracoCms.Core/8.9.1": {
+        "type": "package",
+        "compile": {
+          "lib/net472/Umbraco.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net472/Umbraco.Core.dll": {}
+        }
       }
     }
   },
@@ -12802,6 +12811,20 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "UmbracoCms.Core/8.9.1": {
+      "sha512": "ZmNTiDErMzV3YZOixyJb3qE7o0HXVbXlDAS704jJz797G0+moj0JHQDyXB9sep5iK4XOOU4f9mlmpWMRNFTy7w==",
+      "type": "package",
+      "path": "umbracocms.core/8.9.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/Umbraco.Core.dll",
+        "lib/net472/Umbraco.Core.pdb",
+        "lib/net472/Umbraco.Core.xml",
+        "umbracocms.core.8.9.1.nupkg.sha512",
+        "umbracocms.core.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -12823,7 +12846,8 @@
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.BrowserLink >= 2.1.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.10",
-      "Pomelo.EntityFrameworkCore.MySql >= 2.1.1"
+      "Pomelo.EntityFrameworkCore.MySql >= 2.1.1",
+      "UmbracoCms.Core >= 8.9.1"
     ]
   },
   "packageFolders": {
@@ -12943,6 +12967,10 @@
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
             "version": "[2.1.1, )"
+          },
+          "UmbracoCms.Core": {
+            "target": "Package",
+            "version": "[8.9.1, )"
           }
         },
         "imports": [
@@ -12986,6 +13014,16 @@
       "warningLevel": 1,
       "message": "Package 'Microsoft.AspNet.Identity.EntityFramework 2.2.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Identity.EntityFramework",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'UmbracoCms.Core 8.9.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "UmbracoCms.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.1"
       ]
