@@ -120,6 +120,12 @@ C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\ReleasesRe
 C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\ReleasesRecord\SimpleSearch.g.cshtml.cs
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\AccountWebMVC.csprojAssemblyReference.cache
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Login\Login.cshtml.g.cs
-C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Login\Login2.cshtml.g.cs
 C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Login\Login.g.cshtml.cs
 C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Login\Login2.g.cshtml.cs
+C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
