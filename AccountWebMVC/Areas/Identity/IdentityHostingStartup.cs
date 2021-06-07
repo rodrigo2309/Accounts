@@ -19,6 +19,9 @@ namespace AccountWebMVC.Areas.Identity
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("AccountWebMVCContext2Connection")));
 
+                //services.AddDbContext<AccountWebMVCContext2>(options =>
+                //    options.UseMySql(context.Configuration.GetConnectionString("AccountWebMVCContext")));
+
                 services.AddDefaultIdentity<AccountWebMVCUser>()
                     .AddEntityFrameworkStores<AccountWebMVCContext2>();
             });
