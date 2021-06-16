@@ -23,5 +23,12 @@ namespace AccountWebMVC.Data
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
         }
+        public DbSet<AccountWebMVC.Models.Release> Release { get; set; }
+
+        public DbSet<AccountWebMVC.Models.Local> Local { get; set; }
+
+        public DbSet<AccountWebMVC.Models.Tipo> Tipo { get; set; }
+
+        public DbSet<AccountWebMVC.Models.Usuarios> Usuarios { get; set; }
     }
 }
