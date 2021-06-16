@@ -21,20 +21,20 @@ namespace AccountWebMVC.Controllers
             _localService = localService;
             _tipoService = tipoService;
         }
-        [Authorize]
-        public IActionResult Index()
+        //[Authorize]
+        public IActionResult Index() 
         {
             var list = _localService.FindAll();
             return View(list);
         }
-        [Authorize]
+        //[Authorize]
         public IActionResult Create()
         {
             var tipo = _tipoService.FindAll();
             var viewModel = new LocalFormViewModel { Tipo = tipo };
             return View(viewModel);
         }
-        [Authorize]
+        //[Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Local local)

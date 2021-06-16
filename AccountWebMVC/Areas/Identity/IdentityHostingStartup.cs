@@ -16,8 +16,10 @@ namespace AccountWebMVC.Areas.Identity
         {
             builder.ConfigureServices((context, services) => {
                 services.AddDbContext<AccountWebMVCContext2>(options =>
-                    options.UseSqlServer(
-                        context.Configuration.GetConnectionString("AccountWebMVCContext2Connection")));
+                    options.UseMySql(
+                    //options.UseSqlServer(
+                        context.Configuration.GetConnectionString("AccountWebMVCContext")));
+                        //context.Configuration.GetConnectionString("AccountWebMVCContext2Connection")));
 
                 services.AddDefaultIdentity<AccountWebMVCUser>()
                     .AddEntityFrameworkStores<AccountWebMVCContext2>();

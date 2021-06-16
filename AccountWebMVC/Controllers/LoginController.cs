@@ -23,7 +23,7 @@ namespace AccountWebMVC.Controllers
             return View();
         }
         [AllowAnonymous] //coloca metodo publico 
-        public ActionResult Login2(string returnURL)
+        public ActionResult Login(string returnURL)
         {
             ViewBag.ReturnURL = returnURL;
             return View();
@@ -63,11 +63,11 @@ namespace AccountWebMVC.Controllers
         {
             if (usuarios.Nome == null)
             {
-                return View(nameof(Login2));
+                return View(nameof(Login));
             }
             if (usuarios.Senha == null)
             {
-                return View(nameof(Login2));
+                return View(nameof(Login));
             }
 
             if (_loginService.confereSenha(usuarios.Nome, usuarios.Senha))
@@ -77,7 +77,7 @@ namespace AccountWebMVC.Controllers
 
             ViewData["Resultado"] = "Deu ruim";
 
-            return RedirectToAction(nameof(Login2));
+            return RedirectToAction(nameof(Login));
 
             
         }
