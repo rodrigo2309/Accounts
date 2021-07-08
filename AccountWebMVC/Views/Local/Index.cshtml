@@ -10,6 +10,7 @@
     <!--<a asp-action="Create">Create New</a>-->
     <button class="btn btn-success local">Novo<i class="glyphicon glyphicon-open"></i></button>
 </p>
+<p><button id="Teste">Teste Modal Novo</button></p>    
 <table class="table">
     <thead>
         <tr>
@@ -47,17 +48,9 @@
         }
     </tbody>
 </table>
-<div id="modal" class="modal fade" role="dialog" />
+<div id="modal" class="modal fade" role="dialog">
 
-@section scripts{
-    <script>
-        $(function () {
-            $(".local").click(function () {
-                $("#modal").load("/Local/Create/", function () {
-                    $("#modal").modal();
-                })
-            });
+</div>
+<div id="modal2" class="modal fade" role="dialog">
 
-        })
-    </script>
-}
+</div>

@@ -92,7 +92,6 @@ C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\P
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\Razor\Views\Local\Create.cshtml.g.cs
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\Razor\Views\Login\Login2.cshtml.g.cs
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\Razor\Views\ReleasesRecord\GroupingSearch.cshtml.g.cs
@@ -117,5 +116,7 @@ C:\Estudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.L
 C:\Estudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Estudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 C:\Estudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\AccountWebMVC.csprojAssemblyReference.cache
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\UserSecretsAssemblyInfo.cs
+C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\Razor\Views\Local\TesteModal.cshtml.g.cs
+C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\AccountWebMVC.csprojAssemblyReference.cache
+C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\Razor\Views\Local\Create.cshtml.g.cs

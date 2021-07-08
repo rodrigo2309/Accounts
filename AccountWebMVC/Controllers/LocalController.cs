@@ -34,6 +34,11 @@ namespace AccountWebMVC.Controllers
             var viewModel = new LocalFormViewModel { Tipo = tipo };
             return View(viewModel);
         }
+        public IActionResult TesteModal()
+        {
+            return View();
+        }
+
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
