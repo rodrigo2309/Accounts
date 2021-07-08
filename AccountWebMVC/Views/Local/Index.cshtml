@@ -7,7 +7,8 @@
 <h2>Local</h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <!--<a asp-action="Create">Create New</a>-->
+    <button class="btn btn-success local">Novo<i class="glyphicon glyphicon-open"></i></button>
 </p>
 <table class="table">
     <thead>
@@ -20,7 +21,7 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Tipo)
-            </th>            
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -36,7 +37,7 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Tipo)
-                </td>                
+                </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                     <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
@@ -46,3 +47,17 @@
         }
     </tbody>
 </table>
+<div id="modal" class="modal fade" role="dialog" />
+
+@section scripts{
+    <script>
+        $(function () {
+            $(".local").click(function () {
+                $("#modal").load("/Local/Create/", function () {
+                    $("#modal").modal();
+                })
+            });
+
+        })
+    </script>
+}

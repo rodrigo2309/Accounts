@@ -34,17 +34,8 @@ namespace AccountWebMVC
             services.AddControllersWithViews();
             services.AddRazorPages();
 
-            //services.Configure<CookiePolicyOptions>(options =>
-            //{
-            //    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-            //    options.CheckConsentNeeded = context => true;
-            //    options.MinimumSameSitePolicy = SameSiteMode.None;
-            //});
-            //
-            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
             services.AddDbContext<AccountWebMVCContext>(options =>
-                    options.UseMySql(Configuration.GetConnectionString("AccountWebMVCContext")));
+                    options.UseSqlServer(Configuration.GetConnectionString("AccountWebMVCContext")));
 
             services.AddScoped<ReleasesService>();
             services.AddScoped<LocalService>();

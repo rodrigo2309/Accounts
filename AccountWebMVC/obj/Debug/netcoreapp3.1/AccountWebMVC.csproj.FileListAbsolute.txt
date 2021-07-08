@@ -118,3 +118,4 @@ C:\Estudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.L
 C:\Estudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 C:\Estudos\Accounts\AccountWebMVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\AccountWebMVC.csprojAssemblyReference.cache
+C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\UserSecretsAssemblyInfo.cs
