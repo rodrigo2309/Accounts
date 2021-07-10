@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Details";
+    Layout = null;
 }
 
 <h2>Details</h2>
@@ -13,7 +14,6 @@
                 <h2>Detalhes</h2>
             </div>
             <div class="modal-body">
-                <hr />
                 <dl class="dl-horizontal">
                     <dt>@Html.DisplayNameFor(model => model.Local)</dt>
                     <dd>@Html.DisplayFor(model => model.Local.Nome)</dd>

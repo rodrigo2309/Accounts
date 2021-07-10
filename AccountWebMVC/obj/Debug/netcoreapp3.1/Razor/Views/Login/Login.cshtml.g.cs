@@ -57,7 +57,7 @@ using AccountWebMVC.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(25, 457, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "32e701b1a9a740e7beef23862aa80449", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "94308a7c068843a2859140cb2d65cd91", async() => {
                 BeginContext(31, 444, true);
                 WriteLiteral(@"
     <title>Usando Bootstrap Modal</title>
@@ -84,7 +84,7 @@ using AccountWebMVC.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(484, 2471, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b486594572054249b84dce26a2349c2f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11be24811c44455b986f9f7431cd93a2", async() => {
                 BeginContext(490, 793, true);
                 WriteLiteral(@"
     <div class=""container"">
@@ -105,7 +105,7 @@ using AccountWebMVC.Models;
                         ");
                 EndContext();
                 BeginContext(1283, 1112, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47f6dd870b9a490baf491169777243be", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "77c8fb2661a44b6493fbf19dc47364ca", async() => {
                     BeginContext(1301, 1087, true);
                     WriteLiteral(@"
                             <div class=""form-group"">

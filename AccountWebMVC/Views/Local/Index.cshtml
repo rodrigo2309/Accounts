@@ -5,29 +5,28 @@
 }
 
 <h2>Local</h2>
-
-<p>
-    <!--<a asp-action="Create">Create New</a>-->
-    <button class="btn btn-success local">Novo<i class="glyphicon glyphicon-open"></i></button>
-</p>
-<p><button id="Teste">Teste Modal Novo</button></p>    
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Tipo)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
+<div>
+    <p>
+        <!--<a asp-action="Create">Create New</a>-->
+        <button class="btn btn-success local">Novo<i class="glyphicon glyphicon-open"></i></button>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tipo)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
         {
             <tr>
                 <td>
@@ -46,11 +45,20 @@
                 </td>
             </tr>
         }
-    </tbody>
-</table>
-<div id="modal" class="modal fade" role="dialog">
-
+        </tbody>
+    </table>
 </div>
-<div id="modal2" class="modal fade" role="dialog">
 
-</div>
+<div id="modal" class="modal fade" role="dialog"/>
+
+@section scripts{
+    <script>
+        $(function () {
+            $(".local").click(function () {
+                $("#modal").load("/Local/Create/", function () {
+                    $("#modal").modal();
+                })
+            })
+        });
+    </script>
+            }

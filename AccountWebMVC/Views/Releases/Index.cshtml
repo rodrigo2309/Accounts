@@ -20,17 +20,19 @@
     </tr>
     @foreach (var item in Model)
     {
-        <tr>
-            <td>@Html.DisplayFor(modelItem => item.Id)</td>
-            <td>@Html.DisplayFor(modelItem => item.Local.Nome)</td>
-            <td>@Html.DisplayFor(modelItem => item.Valor)</td>
-            <td>@Html.DisplayFor(modelItem => item.Data)</td>
-            <td>
-                <button class="btn btn-success details" data-id="@item.Id"><i class="glyphicon glyphicon-file"></i></button>
-                <button class="btn btn-danger delete" data-id="@item.Id"><i class="glyphicon glyphicon-trash"></i> </button>
-                <button class="btn btn-primary edit" data-id="@item.Id"><i class="glyphicon glyphicon-edit"></i> </button>
-            </td>
-        </tr>
+        <div class="container-fluid">
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Id)</td>
+                <td>@Html.DisplayFor(modelItem => item.Local.Nome)</td>
+                <td>@Html.DisplayFor(modelItem => item.Valor)</td>
+                <td>@Html.DisplayFor(modelItem => item.Data)</td>
+                <td>
+                    <button class="btn btn-success details" data-id="@item.Id"><i class="glyphicon glyphicon-file"></i></button>
+                    <button class="btn btn-danger delete" data-id="@item.Id"><i class="glyphicon glyphicon-trash"></i> </button>
+                    <button class="btn btn-primary edit" data-id="@item.Id"><i class="glyphicon glyphicon-edit"></i> </button>
+                </td>
+            </tr>
+        </div>
     }
 </table>
 <div id="modal" class="modal fade" role="dialog" />
