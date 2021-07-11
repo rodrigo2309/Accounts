@@ -1,4 +1,8 @@
 ﻿@model AccountWebMVC.Models.ViewModels.ReleasesFormViewModel
+@using Microsoft.AspNetCore.Identity
+@using AccountWebMVC.Areas.Identity.Data
+@inject SignInManager<AccountWebMVCUser> SignInManager
+@inject UserManager<AccountWebMVCUser> UserManager
 
 @{ ViewData["Title"] = "Create";
     Layout = null;
@@ -13,6 +17,10 @@
             <div class="modal-body">
                 <form asp-action="Create" id="myform">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <!--<div class="form-group">
+        <label asp-for="Release.LoginId" class="control-label">@UserManager.GetUserId(User)</label>
+        <input asp-for="Release.LoginId" class="form-control" hidden="hidden" value=@UserManager.GetUserId(User) />
+    </div>-->
                     <div class="form-group">
                         <label asp-for="Release.Local" class="control-label"></label>
                         <select asp-for="Release.LocalID" asp-items="@(new SelectList(Model.Local,"Id","Nome"))"

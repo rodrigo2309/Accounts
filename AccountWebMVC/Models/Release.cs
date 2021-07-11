@@ -1,4 +1,5 @@
 ﻿
+using AccountWebMVC.Areas.Identity.Pages.Account;
 using System;
 using System.ComponentModel.DataAnnotations;
 
@@ -11,6 +12,7 @@ namespace AccountWebMVC.Models
         public int LocalID { get; set; }  
         [DisplayFormat(DataFormatString = "{0:F2}")]
         public double Valor { get; set; }
+        public string LoginId { get; set; }
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
@@ -25,12 +27,13 @@ namespace AccountWebMVC.Models
         {
 
         }
-        public Release(int id, Local local, double valor, DateTime data)
+        public Release(int id, Local local, double valor, DateTime data, string loginId)
         {
             Id = id;
             Local = local;
             Valor = valor;
             Data = data;
+            LoginId = loginId;
         }
 
        

@@ -97,6 +97,8 @@ namespace AccountWebMVC.Migrations
 
                     b.Property<int>("LocalID");
 
+                    b.Property<string>("LoginId");
+
                     b.Property<double>("Valor");
 
                     b.HasKey("Id");

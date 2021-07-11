@@ -21,6 +21,5 @@ namespace AccountWebMVC.Data
         public DbSet<AccountWebMVC.Models.Tipo> Tipo { get; set; }
 
         public DbSet<AccountWebMVC.Models.Usuarios> Usuarios { get; set; }
-
     }
 }

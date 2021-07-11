@@ -6,6 +6,9 @@ using AccountWebMVC.Models;
 using AccountWebMVC.Models.ViewModels;
 using System.Net;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using System.Threading.Tasks;
+using System.Security.Claims;
 
 namespace AccountWebMVC.Controllers
 {
@@ -23,7 +26,8 @@ namespace AccountWebMVC.Controllers
         [Authorize]
         public IActionResult Index()
         {
-            var list = _releasesService.FindAll();
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var list = _releasesService.FindAll(userId);
             return View(list);
         }
         [Authorize]
@@ -80,6 +84,7 @@ namespace AccountWebMVC.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Release release)
         {
+            release.LoginId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
             _releasesService.Insert(release);
             return RedirectToAction(nameof(Index));
         }
