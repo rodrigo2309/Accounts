@@ -1,0 +1,48 @@
+﻿@{
+    Layout = null;
+}
+<div id="modal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="row">
+                    <div class="col-md-11">
+                        <span>Cadastro de Nova Operadora</span>
+                    </div>
+                    <div class="col-md-1">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="form-group col-sm-12">
+                        <label class="col-sm-12">Nome</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="txtCarrierName_PartialWapCarrierItem" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-12">
+                        <label class="col-sm-12">IsoCode</label>
+                        <div class="col-sm-12">
+                            <textarea class="form-control" id="txtCarrierIsoCode_PartialWapCarrierItem" readonly="readonly" maxlength="200"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnSaveCarrierItem_PartialWapCarrierItem">
+                    Salvar
+                </button>
+
+                <button type="button" class="btn btn-secondary" id="btnCloseCarrierItem_PartialWapCarrierItem" data-dismiss="modal">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
