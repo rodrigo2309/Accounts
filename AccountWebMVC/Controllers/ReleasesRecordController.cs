@@ -20,8 +20,6 @@ namespace AccountWebMVC.Controllers
         [Authorize]
         public IActionResult Index()
         {
-            ViewData["minDate"] = "2021-07-30";
-            //ViewData["maxDate"] = "2021-07-30";
             return View();
         }
         [Authorize]
