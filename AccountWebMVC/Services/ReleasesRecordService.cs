@@ -10,6 +10,8 @@ namespace AccountWebMVC.Services
 {
     public class ReleasesRecordService
     {
+        public string UserId { get; set; }
+
         private readonly AccountWebMVCContext _context;
         public ReleasesRecordService(AccountWebMVCContext context)
         {
@@ -21,11 +23,11 @@ namespace AccountWebMVC.Services
             var result = from obj in _context.Release select obj;
             if (minDate.HasValue)
             {
-                result = result.Where(x => x.Data >= minDate.Value);
+                result = result.Where(x => x.Data >= minDate.Value && x.LoginId == UserId);
             };
             if (maxDate.HasValue)
             {
-                result = result.Where(x => x.Data <= maxDate.Value);
+                result = result.Where(x => x.Data <= maxDate.Value && x.LoginId == UserId);
             }
             return await result
                 .Include(x=> x.Local)
@@ -33,21 +35,22 @@ namespace AccountWebMVC.Services
                 .ToListAsync();
         }
 
-        public async Task<List<IGrouping<Local,Release>>> FindByDateGroupingAsync(DateTime? minDate, DateTime? maxDate)
+        public async Task<List<IGrouping<Tipo,Release>>> FindByDateGroupingAsync(DateTime? minDate, DateTime? maxDate)
         {
             var result = from obj in _context.Release select obj;
             if (minDate.HasValue)
             {
-                result = result.Where(x => x.Data >= minDate.Value);
+                result = result.Where(x => x.Data >= minDate.Value && x.LoginId == UserId);
             };
             if (maxDate.HasValue)
             {
-                result = result.Where(x => x.Data <= maxDate.Value);
+                result = result.Where(x => x.Data <= maxDate.Value && x.LoginId == UserId);
             }
             return await result
                 .Include(x => x.Local)
+                .Include(x => x.Local.Tipo)
                 .OrderByDescending(x => x.Data)
-                .GroupBy(x => x.Local)
+                .GroupBy(x => x.Local.Tipo)
                 .ToListAsync();
         }
 

@@ -11,6 +11,8 @@ namespace AccountWebMVC.Models
         public int Id { get; set; }
         public string Nome { get; set; }
 
+        public ICollection<Local> Local { get; set; } = new List<Local>();
+
         public Tipo()
         {
 
@@ -21,5 +23,10 @@ namespace AccountWebMVC.Models
             Id = id;
             Nome = nome;
         }
+
+        //public double TotalSales(DateTime initial, DateTime final)
+        //{
+        //    return Releases.Where(sr => sr.Data >= initial && sr.Data <= final).Sum(sr => sr.Valor);
+        //}
     }
 }

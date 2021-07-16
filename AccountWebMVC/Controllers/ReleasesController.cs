@@ -39,6 +39,9 @@ namespace AccountWebMVC.Controllers
         [Authorize]
         public IActionResult Edit(int? id)
         {
+
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             if (id == null)
             {
                 return NotFound();
@@ -50,7 +53,7 @@ namespace AccountWebMVC.Controllers
                 return NotFound();
             }
 
-            List<Local> local = _localService.FindAll();
+            List<Local> local = _localService.FindAll(userId);
             ReleasesFormViewModel viewModel = new ReleasesFormViewModel {Local = local, Release = obj };
             return View(viewModel);
 
@@ -75,8 +78,12 @@ namespace AccountWebMVC.Controllers
         [Authorize]
         public IActionResult Create()
         {
-            var local = _localService.FindAll();
-            var viewModel = new ReleasesFormViewModel { Local = local }; 
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var local = _localService.FindAll(userId);
+            var viewModel = new ReleasesFormViewModel { 
+                Local = local,
+                Release = new Release { Data = DateTime.Now}
+            };
             return View(viewModel); //new Release()
         }
         [Authorize]
@@ -102,6 +109,7 @@ namespace AccountWebMVC.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(Release release)
         {
+            release.LoginId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
             _releasesService.Update(release);
             return RedirectToAction(nameof(Index));
         }

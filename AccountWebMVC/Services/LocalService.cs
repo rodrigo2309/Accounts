@@ -14,9 +14,9 @@ namespace AccountWebMVC.Services
             _context = context;
         }
 
-        public List<Local> FindAll()
+        public List<Local> FindAll(string idUsuario)
         {
-            return _context.Local.ToList(); //.OrderBy(x => x.Nome)
+            return _context.Local.Where(i => i.LoginID == idUsuario).ToList() ; //.OrderBy(x => x.Nome)
         }
 
         public void Insert(Local obj)

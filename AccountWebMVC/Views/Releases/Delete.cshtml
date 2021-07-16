@@ -14,7 +14,6 @@
                 <h4 class="modal-title">Deseja deletar este lançamento ?</h4>
             </div>
             <div class="modal-body">
-                <hr />
                 <dl class="dl-horizontal">
                     <dt>@Html.DisplayNameFor(model => model.Local)</dt>
                     <dd>@Html.DisplayFor(model => model.Local.Nome)</dd>
@@ -29,7 +28,7 @@
                 {
                     @Html.AntiForgeryToken()
                     <div class="form-actions no-color">
-                        <input type="submit" value="Deletar" class="btn btn-succcess" />
+                        <input type="submit" value="Deletar" class="btn btn-success" />
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                     </div>
                 }

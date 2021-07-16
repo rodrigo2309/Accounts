@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using AccountWebMVC.Models;
 using AccountWebMVC.Models.ViewModels;
@@ -24,7 +25,8 @@ namespace AccountWebMVC.Controllers
         [Authorize]
         public IActionResult Index() 
         {
-            var list = _localService.FindAll();
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var list = _localService.FindAll(userId);
             return View(list);
         }
         [Authorize]
@@ -44,6 +46,7 @@ namespace AccountWebMVC.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Local local)
         {
+            local.LoginID = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
             _localService.Insert(local);
             return RedirectToAction("Index","Releases");
         }

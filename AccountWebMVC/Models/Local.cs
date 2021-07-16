@@ -11,6 +11,7 @@ namespace AccountWebMVC.Models
         public string Nome { get; set; }
         public Tipo Tipo { get; set; }
         public int TipoID { get; set; }
+        public string LoginID { get; set; }
 
         public ICollection<Release> Releases { get; set; } = new List<Release>();
 
@@ -18,11 +19,12 @@ namespace AccountWebMVC.Models
         {
 
         }
-        public Local(int id, string nome, Tipo tipo)
+        public Local(int id, string nome, Tipo tipo, string loginId)
         {
             Id = id;
             Nome = nome;
             Tipo = tipo;
+            LoginID = loginId;
         }
         public double TotalSales(DateTime initial, DateTime final)
         {

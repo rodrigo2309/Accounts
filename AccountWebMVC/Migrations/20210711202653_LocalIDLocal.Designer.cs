@@ -4,14 +4,16 @@ using AccountWebMVC.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AccountWebMVC.Migrations
 {
     [DbContext(typeof(AccountWebMVCContext2))]
-    partial class AccountWebMVCContext2ModelSnapshot : ModelSnapshot
+    [Migration("20210711202653_LocalIDLocal")]
+    partial class LocalIDLocal
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

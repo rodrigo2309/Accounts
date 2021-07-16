@@ -30,8 +30,8 @@ namespace AccountWebMVC.Services
             Tipo t1 = new Tipo(1, "MERCADO");
             Tipo t2 = new Tipo(2, "FARMÀCIA");
 
-            Local l1 = new Local(1,"MUNDIAL",t1);
-            Local l2 = new Local(2, "PACHECO", t2);
+            Local l1 = new Local(1,"MUNDIAL",t1,"");
+            Local l2 = new Local(2, "PACHECO", t2,"");
 
             Release d1 = new Release(1,l1, 100, DateTime.Now,"teste");
             Release d2 = new Release(2,l2, 200, DateTime.Now,"teste");
@@ -44,7 +44,7 @@ namespace AccountWebMVC.Services
 
         public List<Release> FindAll(string idUsuario)
         {
-            return _context.Release.Include(obj => obj.Local).Where(i =>  i.LoginId == idUsuario) .ToList();
+            return _context.Release.Include(obj => obj.Local).Where(i => i.LoginId == idUsuario).ToList();
         }
 
         public void Insert(Release obj)

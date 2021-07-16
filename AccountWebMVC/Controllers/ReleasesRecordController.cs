@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using AccountWebMVC.Services;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace AccountWebMVC.Controllers
 {
@@ -19,11 +20,15 @@ namespace AccountWebMVC.Controllers
         [Authorize]
         public IActionResult Index()
         {
+            ViewData["minDate"] = "2021-07-30";
+            //ViewData["maxDate"] = "2021-07-30";
             return View();
         }
         [Authorize]
         public async Task<IActionResult> SimpleSearch(DateTime? minDate,DateTime? maxDate)
         {
+            _releaseRecordService.UserId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             if (!minDate.HasValue)
             {
                 minDate = new DateTime(DateTime.Now.Year, 1, 1);
@@ -41,6 +46,7 @@ namespace AccountWebMVC.Controllers
         [Authorize]
         public async Task<IActionResult> GroupingSearch(DateTime? minDate, DateTime? maxDate)
         {
+            _releaseRecordService.UserId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (!minDate.HasValue)
             {
                 minDate = new DateTime(DateTime.Now.Year, 1, 1);
