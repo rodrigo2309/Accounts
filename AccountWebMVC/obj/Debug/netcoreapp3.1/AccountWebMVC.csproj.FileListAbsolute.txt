@@ -243,3 +243,4 @@ C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\AccountWebMVC.csproj
 C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\AccountWebMVC.dll
 C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\AccountWebMVC.pdb
 C:\VSEstudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\AccountWebMVC.genruntimeconfig.cache
+C:\Estudos\Accounts\AccountWebMVC\obj\Debug\netcoreapp3.1\Razor\Views\Conta\Registrar.cshtml.g.cs

@@ -20,6 +20,8 @@ namespace AccountWebMVC.Controllers
         [Authorize]
         public IActionResult Index()
         {
+            ViewData["dataIni"] = DateTime.Now.Year + "-" + DateTime.Now.Month.ToString("D2") + "-" + "01";
+            ViewData["dataFim"] = DateTime.Now.Year + "-" + DateTime.Now.Month.ToString("D2") + "-" + DateTime.Now.Day.ToString("D2");
             return View();
         }
         [Authorize]

@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\VSEstudos\\Accounts\\AccountWebMVC\\AccountWebMVC.csproj": {}
+    "C:\\Estudos\\Accounts\\AccountWebMVC\\AccountWebMVC.csproj": {}
   },
   "projects": {
-    "C:\\VSEstudos\\Accounts\\AccountWebMVC\\AccountWebMVC.csproj": {
+    "C:\\Estudos\\Accounts\\AccountWebMVC\\AccountWebMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\VSEstudos\\Accounts\\AccountWebMVC\\AccountWebMVC.csproj",
+        "projectUniqueName": "C:\\Estudos\\Accounts\\AccountWebMVC\\AccountWebMVC.csproj",
         "projectName": "AccountWebMVC",
-        "projectPath": "C:\\VSEstudos\\Accounts\\AccountWebMVC\\AccountWebMVC.csproj",
-        "packagesPath": "C:\\Users\\rodrigo.mori\\.nuget\\packages\\",
-        "outputPath": "C:\\VSEstudos\\Accounts\\AccountWebMVC\\obj\\",
+        "projectPath": "C:\\Estudos\\Accounts\\AccountWebMVC\\AccountWebMVC.csproj",
+        "packagesPath": "C:\\Users\\drigo\\.nuget\\packages\\",
+        "outputPath": "C:\\Estudos\\Accounts\\AccountWebMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\rodrigo.mori\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\drigo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -127,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
