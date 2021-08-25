@@ -74,7 +74,6 @@ C:\Estudos\Accounts\AccountWebMVC\bin\Release\netcoreapp3.1\runtimes\win-x64\nat
 C:\Estudos\Accounts\AccountWebMVC\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Estudos\Accounts\AccountWebMVC\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Estudos\Accounts\AccountWebMVC\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Estudos\Accounts\AccountWebMVC\obj\Release\netcoreapp3.1\AccountWebMVC.csprojAssemblyReference.cache
 C:\Estudos\Accounts\AccountWebMVC\obj\Release\netcoreapp3.1\AccountWebMVC.AssemblyInfoInputs.cache
 C:\Estudos\Accounts\AccountWebMVC\obj\Release\netcoreapp3.1\AccountWebMVC.AssemblyInfo.cs
 C:\Estudos\Accounts\AccountWebMVC\obj\Release\netcoreapp3.1\AccountWebMVC.csproj.CoreCompileInputs.cache
@@ -120,3 +119,5 @@ C:\Estudos\Accounts\AccountWebMVC\obj\Release\netcoreapp3.1\AccountWebMVC.dll
 C:\Estudos\Accounts\AccountWebMVC\obj\Release\netcoreapp3.1\AccountWebMVC.pdb
 C:\Estudos\Accounts\AccountWebMVC\obj\Release\netcoreapp3.1\AccountWebMVC.genruntimeconfig.cache
 C:\Estudos\Accounts\AccountWebMVC\obj\Release\netcoreapp3.1\Razor\Views\Local\TesteModal.cshtml.g.cs
+C:\Estudos\Accounts\AccountWebMVC\obj\Release\netcoreapp3.1\Razor\Views\Conta\Registrar.cshtml.g.cs
+C:\Estudos\Accounts\AccountWebMVC\obj\Release\netcoreapp3.1\AccountWebMVC.csproj.AssemblyReference.cache

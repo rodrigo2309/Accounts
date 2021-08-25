@@ -8,29 +8,29 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA25WYzbZ+YEmQQl3+qDpbwQAAAAACAAAAAAAQZgAAAAEAACAAAAC+PgWXNomHIOBwvbqmthjnFVyyKvhRI4LYliTqlrrzjwAAAAAOgAAAAAIAACAAAACY1uzf3Ac0zKQy7shGC2VLgYRWTsuyAmuhX4ZsyQmO1SAAAACEfolMKEx71lLLjeUAkFdqmK5VW5d9PzbiBnkZnNxqSEAAAAC5yKxYPg5afWCKVq9JFGMk+wCt+G0iVmJTgG8odoV0ojXNYMNE9M53k2rFji8QPKEhzXMSwo63YapU0+zyzCdK</EncryptedPassword>
     <_PublishTargetUrl>ftp://accountssystem.somee.com/www.accountssystem.somee.com</_PublishTargetUrl>
-    <History>True|2021-07-11T20:57:58.8996253Z;True|2021-07-10T17:13:58.3670796-03:00;False|2021-07-10T17:09:59.5363673-03:00;True|2021-07-10T10:32:21.8592250-03:00;False|2021-07-10T10:27:56.2242701-03:00;True|2021-07-10T00:07:24.9189080-03:00;True|2021-07-09T12:06:34.5445584-03:00;False|2021-07-09T12:02:24.2381216-03:00;False|2021-07-09T11:33:04.4935581-03:00;True|2021-07-09T10:56:53.3324136-03:00;False|2021-07-09T10:51:04.5360436-03:00;False|2021-06-20T20:14:42.1538504-03:00;True|2021-06-17T09:40:51.5537226-03:00;True|2021-06-17T00:11:30.5355788-03:00;</History>
+    <History>True|2021-08-24T21:36:21.7115383Z;False|2021-08-24T18:21:46.6763422-03:00;False|2021-08-24T18:17:15.1681991-03:00;False|2021-08-24T15:47:45.0089275-03:00;True|2021-07-17T10:30:24.0354910-03:00;False|2021-07-17T09:54:20.2723774-03:00;True|2021-07-11T17:57:58.8996253-03:00;True|2021-07-10T17:13:58.3670796-03:00;False|2021-07-10T17:09:59.5363673-03:00;True|2021-07-10T10:32:21.8592250-03:00;False|2021-07-10T10:27:56.2242701-03:00;True|2021-07-10T00:07:24.9189080-03:00;True|2021-07-09T12:06:34.5445584-03:00;False|2021-07-09T12:02:24.2381216-03:00;False|2021-07-09T11:33:04.4935581-03:00;True|2021-07-09T10:56:53.3324136-03:00;False|2021-07-09T10:51:04.5360436-03:00;False|2021-06-20T20:14:42.1538504-03:00;True|2021-06-17T09:40:51.5537226-03:00;True|2021-06-17T00:11:30.5355788-03:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="AccountWebMVC.deps.json">
-      <publishTime>07/11/2021 17:54:16</publishTime>
+      <publishTime>08/24/2021 18:32:28</publishTime>
     </File>
     <File Include="AccountWebMVC.dll">
-      <publishTime>07/11/2021 17:54:07</publishTime>
+      <publishTime>08/24/2021 18:32:23</publishTime>
     </File>
     <File Include="AccountWebMVC.exe">
-      <publishTime>07/11/2021 17:54:07</publishTime>
+      <publishTime>08/24/2021 18:32:23</publishTime>
     </File>
     <File Include="AccountWebMVC.pdb">
-      <publishTime>07/11/2021 17:54:07</publishTime>
+      <publishTime>08/24/2021 18:32:23</publishTime>
     </File>
     <File Include="AccountWebMVC.runtimeconfig.json">
-      <publishTime>06/17/2021 00:05:46</publishTime>
+      <publishTime>08/24/2021 15:42:54</publishTime>
     </File>
     <File Include="AccountWebMVC.Views.dll">
-      <publishTime>07/11/2021 17:54:09</publishTime>
+      <publishTime>08/24/2021 18:32:27</publishTime>
     </File>
     <File Include="AccountWebMVC.Views.pdb">
-      <publishTime>07/11/2021 17:54:09</publishTime>
+      <publishTime>08/24/2021 18:32:27</publishTime>
     </File>
     <File Include="appsettings.Development.json">
       <publishTime>10/21/2020 23:54:07</publishTime>
@@ -237,7 +237,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/05/2020 13:43:50</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>10/07/2021 17:10:18</publishTime>
+      <publishTime>08/24/2021 18:32:28</publishTime>
     </File>
     <File Include="wwwroot/css/site.css">
       <publishTime>10/21/2020 23:54:07</publishTime>

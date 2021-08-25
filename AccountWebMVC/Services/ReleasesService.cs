@@ -44,7 +44,7 @@ namespace AccountWebMVC.Services
 
         public List<Release> FindAll(string idUsuario)
         {
-            return _context.Release.Include(obj => obj.Local).Where(i => i.LoginId == idUsuario).ToList();
+            return _context.Release.Include(obj => obj.Local).Where(i => i.LoginId == idUsuario).OrderByDescending(a => a.Id).ToList();
         }
 
         public void Insert(Release obj)
